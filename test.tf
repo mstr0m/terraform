@@ -28,6 +28,6 @@ resource "aws_instance" "simplilearn" {
      Name = "Ubuntu"
   }
   output "my-public-ip" {
-    value = aws_instance.public_ip
+    value = aws_instance.simplilearn.public_ip
   }
 }
