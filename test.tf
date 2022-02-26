@@ -27,7 +27,7 @@ resource "aws_instance" "simplilearn" {
   tags = {
      Name = "Ubuntu"
   }
-  output "my-public-ip" {
-    value = aws_instance.simplilearn.public_ip
-  }
+}
+output "my-public-ip" {
+  value = aws_instance.simplilearn.public_ip
 }
