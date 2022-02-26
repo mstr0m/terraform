@@ -5,7 +5,7 @@ variable "AWS_REGION" {
 
 resource "aws_security_group" "webserver_sg" {
   name = "Port 22"
-  ingerss {
+  ingress {
     from_port = 22
     to_port = 22
     protocol = "tcp"
